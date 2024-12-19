@@ -1,0 +1,91 @@
+@import url("./header.css");
+
+.studies {
+  display: grid;
+  grid-template-areas:
+    "title title title"
+    "studies1    studies2 studies3 ";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+.studies__title {
+  grid-area: title;
+  text-align: center;
+  padding-top: 50px;
+  position: relative;
+  padding-bottom: 1rem;
+  line-height: 1;
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+  color: var(--secondary-color);
+}
+
+.studies__title:after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 5px;
+  border-radius: 3px;
+  background-color: var(--primary-color);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.studie {
+  position: relative;
+  max-width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.studie:hover img {
+  transform: scale(1.1);
+}
+
+.studies__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.studies__paragraph {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 25px;
+}
+
+.studie:hover .studies__paragraph {
+  opacity: 1;
+}
+
+.studies1 {
+    grid-area: studies1;
+}
+
+.studies2 {
+    grid-area: studies2;
+}
+
+.studies3 {
+    grid-area: studies3;
+}
