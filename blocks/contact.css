@@ -1,8 +1,5 @@
 @import url("./header.css");
 
-
-  
-
 .contact {
   display: grid;
   grid-template-areas:
@@ -81,12 +78,12 @@
 }
 
 .contact__features-item {
-    padding: 8px 0;
+  padding: 8px 0;
 }
 
 .form {
- margin: auto;
- padding-right: 20px;
+  margin: auto;
+  padding-right: 20px;
 }
 
 .form__item input,
@@ -113,4 +110,14 @@
 .form__item textarea:focus {
   outline: none;
   border-color: var(--main-color);
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
 }
