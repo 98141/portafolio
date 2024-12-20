@@ -1,5 +1,8 @@
 @import url("./header.css");
 
+
+  
+
 .contact {
   display: grid;
   grid-template-areas:
@@ -75,6 +78,10 @@
 .contact__features {
   color: var(--secondary-color);
   text-align: center;
+}
+
+.contact__features-item {
+    padding: 8px 0;
 }
 
 .form {
