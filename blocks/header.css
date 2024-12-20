@@ -1,5 +1,6 @@
 :root {
-  --main-color: #191c32;
+  /*--main-color: #191c32;*/
+  --main-color: black;
   --primary-color: aqua;
   --secondary-color: #fff;
 }
