@@ -135,6 +135,9 @@
     width: 300px;
     height: 200px;
   }
+  .contact__features-iframe {
+    width: 100%;
+  }
 
   .form {
     margin: auto;
